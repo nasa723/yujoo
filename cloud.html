@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>yujoo</title>
+        <link rel="stylesheet" href="tmi.css">
+    </head>
+
+    <script>
+        var a = 0;
+        function click_button() {
+            a = a + 1;
+            document.getElementById('number').innerText = a;
+        }
+        function init() {
+            a = 0;
+            document.getElementById('number').innerText = a;
+        }
+    </script>
+
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="wrapper">
+                    <div class="name">Info</div>
+                    <div class="container">
+                        <a href="index.html">
+                            <div class="menu">main</div>
+                        </a>
+                        <a href="tmi.html">
+                            <div class="menu">tmi</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="long_line"></div>
+            </div>
+            <div class="animation">
+                안녕하세요.
+            </div>
+            <div>
+                <div id="number">
+                    <script>document.write(a)</script>
+                </div>
+                <button onclick="click_button()">버튼</button>
+                <button onclick="init()">초기화</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+

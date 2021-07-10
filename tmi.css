@@ -27,6 +27,20 @@ a {
     align-items: center;
 }
 
+.text {
+    color: black;
+
+}
+
+.text:hover {
+    color: blue;
+}
+
+.header {
+    position: fixed;
+    background: white;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -59,37 +73,30 @@ a {
     margin: 20px 0;
 }
 
-.elsa {
-    width: 250px;
-    border-radius: 200px;
-    margin-top: 30px;
-    box-shadow: 0 0 10px rgba(42, 90, 163, 0.5);
+.cloud {
+    width: 350px;
+    transition: 1s;
+    box-shadow: 0 0 10px rgba(28, 45, 85, 0.425);
 }
 
-.fullname {
-    font-size: 50px;
-    margin-top: 15px;
-    color: rgb(145, 202, 255);
+.cloud:hover {
+    width: 480px;
+    transition: 1.7s;
 }
 
-.dis {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 17px;
-    line-height: 28px;
-    color:rgb(81, 148, 202);
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.short_line {
-    width: 70px;
-    height: 1px;
-    background: rgb(159, 202, 241);
-    margin: 20px 0;
-}
-
-.icon {
-    width: 45px;
-    margin: 0 8px;
+.animation {
+    animation-name: slideup;
+    animation-duration: 1s;
+    padding-top: 135px;
 }
